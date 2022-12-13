@@ -1,10 +1,10 @@
 # Rict - Ritya Image Cutter
 
-![image]('./screenshots/1.png')
+![image]('screenshots/1.png')
 
 A simple image cropping application
 
-![image]('./screenshots/2.png')
+![image]('screenshots/2.png')
 
 Supports basic filters.
 
