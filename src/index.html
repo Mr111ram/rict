@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rict</title>
+    <link rel="shortcut icon" href="./assets/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="view">
+        <canvas id="canvas"></canvas>
+        <div id="preload"></div>
+      </div>
+      <div class="tools" id="tools">
+        <div class="options">
+          <div class="options_block" id="adjustment">
+            <h2 class="title">size adjustment</h2>
+            <div class="button_group">
+              <label class="button input">
+                <span>w:</span><input type="number" id="image_width" />
+              </label>
+              <label class="button input">
+                <span>h:</span><input type="number" id="image_height" />
+              </label>
+            </div>
+            <div class="button_group">
+              <label class="button input">
+                <span>X:</span><input type="number" id="image_cord_x" />
+              </label>
+              <label class="button input">
+                <span>Y:</span><input type="number" id="image_cord_y" />
+              </label>
+            </div>
+            <label class="button input">
+              <span>SCALE:</span
+              ><input
+                type="number"
+                id="image_scale"
+                min="0.1"
+                max="5"
+                step="0.01"
+              />
+            </label>
+          </div>
+          <div class="options_block" id="editing">
+            <h2 class="title">image editing</h2>
+            <label class="button input">
+              <span>brightness:</span>
+              <input
+                type="number"
+                id="brightness"
+                value="100"
+                max="1000"
+                min="0"
+              />
+            </label>
+            <label class="button input">
+              <span>contrast:</span>
+              <input
+                type="number"
+                id="contrast"
+                value="100"
+                max="200"
+                min="0"
+              />
+            </label>
+            <label class="button input">
+              <span>grayscale:</span>
+              <input type="number" id="grayscale" value="0" max="100" min="0" />
+            </label>
+            <label class="button input">
+              <span>invert:</span>
+              <input type="number" id="invert" value="0" max="100" min="0" />
+            </label>
+          </div>
+        </div>
+        <div class="control">
+          <div class="button_group">
+            <button class="button button_control" id="prev">sizes</button>
+            <button class="button button_control" id="next">edits</button>
+          </div>
+          <div class="button_group">
+            <button class="button" id="load">load image</button>
+            <button class="button" id="save">save image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
